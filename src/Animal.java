@@ -1,6 +1,6 @@
 public abstract class Animal {
-    private String breed;
-    private int age;
+    public String breed;
+    public int age;
 
     public Animal (String breed, int age){
         this.breed = breed;
