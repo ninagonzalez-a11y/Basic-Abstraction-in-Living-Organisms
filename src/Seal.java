@@ -1,4 +1,8 @@
 public class Seal extends Caniformia{
+
+    Seal(String breed, int age, int teeth, boolean hasClaws){
+        super(breed, age, teeth, hasClaws);
+    }
     @Override
     public void makeSound(){
 
