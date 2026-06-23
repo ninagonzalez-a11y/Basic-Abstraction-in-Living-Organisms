@@ -1,7 +1,17 @@
 public class Clownfish extends Percomorpha {
 
-    Clownfish(String breed, int age, String size){
+    private String pattern;
+
+    Clownfish(String breed, int age, String size, String pattern){
         super(breed, age, size);
+        this.pattern = pattern;
+    }
+
+    public String getPattern() {
+        return pattern;
+    }
+    public void setPattern(String pattern) {
+        this.pattern = pattern;
     }
 
     public void makeSound(){
@@ -9,7 +19,7 @@ public class Clownfish extends Percomorpha {
     }
 
     public void sleep(){
-        System.out.println("Clownfish slept for 8 hours today.")
+        System.out.println("Clownfish slept for 8 hours today.");
     }
 
     public void eat(){

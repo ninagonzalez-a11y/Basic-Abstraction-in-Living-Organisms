@@ -1,6 +1,17 @@
 public class Giraffe extends Ruminantia{
-    Giraffe(String breed, int age, String stomachSize, String headGear){
+
+    private int patchNumber;
+    Giraffe(String breed, int age, String stomachSize, String headGear, int patchNumber){
         super(breed, age, stomachSize, headGear);
+        this.patchNumber = patchNumber;
+    }
+
+    public int getPatchNumber(){
+        return patchNumber;
+    }
+
+    public void setPatchNumber(int patchNumber){
+        this.patchNumber = patchNumber;
     }
 
     public void makeSound(){

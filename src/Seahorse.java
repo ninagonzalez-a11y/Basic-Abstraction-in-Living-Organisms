@@ -1,9 +1,17 @@
 public class Seahorse extends Percomorpha {
-    Seahorse(String breed, int age, String size){
-
+    private int swimSpeed;
+    Seahorse(String breed, int age, String size, int swimSpeed){
         super(breed, age, size);
+        this.swimSpeed = swimSpeed;
     }
 
+    public int getSwimSpeed(){
+        return swimSpeed;
+    }
+
+    public void setSwimSpeed(int swimSpeed){
+        this.swimSpeed = swimSpeed;
+    }
     public void makeSound(){
         System.out.println("Click-click!");
     }

@@ -1,7 +1,18 @@
 public class Human extends Primates{
 
-    Human(String breed, int age, boolean hasTail, String chestSize){
+    private String eyeColor;
+
+    Human(String breed, int age, boolean hasTail, String chestSize, String eyeColor){
         super(breed, age, hasTail, chestSize);
+        this.eyeColor = eyeColor;
+    }
+
+    public String getEyeColor(){
+        return eyeColor;
+    }
+
+    public void setEyeColor(String eyeColor){
+        this.eyeColor = eyeColor;
     }
 
     public void makeSound(){

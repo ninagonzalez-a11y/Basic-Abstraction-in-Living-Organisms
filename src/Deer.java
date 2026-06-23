@@ -1,9 +1,22 @@
 public class Deer extends Ruminantia {
-    Deer(String breed, int age, String stomachSize, String headGear){
+    private String antlerShape;
+
+    Deer(String breed, int age, String stomachSize, String headGear, String antlerShape)
+    {
         super(breed, age, stomachSize, headGear);
+        this.antlerShape = antlerShape;
+    }
+
+    public String getAntlerShape(){
+        return antlerShape;
+    }
+
+    public void setAntlerShape(String antlerShape){
+        this.antlerShape = antlerShape;
     }
 
     public void makeSound(){
+
         System.out.println("Urp! Urp! Urp!");
     }
 

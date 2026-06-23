@@ -1,10 +1,18 @@
 public class Seal extends Caniformia{
 
-    private
+    private boolean hasEarFlaps;
 
     Seal(String breed, int age, int teeth, boolean hasClaws){
-
         super(breed, age, teeth, hasClaws);
+        this.hasEarFlaps = hasEarFlaps;
+    }
+
+    public boolean gethasEarFlaps(){
+        return hasEarFlaps;
+    }
+
+    public void sethasEarFlaps(boolean hasEarFlaps){
+        this.hasEarFlaps = hasEarFlaps;
     }
     public void makeSound(){
 
