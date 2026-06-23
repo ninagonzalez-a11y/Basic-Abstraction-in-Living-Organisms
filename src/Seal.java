@@ -1,6 +1,9 @@
 public class Seal extends Caniformia{
 
+    private
+
     Seal(String breed, int age, int teeth, boolean hasClaws){
+
         super(breed, age, teeth, hasClaws);
     }
     public void makeSound(){

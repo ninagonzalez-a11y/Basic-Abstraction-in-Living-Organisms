@@ -1,7 +1,19 @@
 public class Panda extends Caniformia {
 
-    Panda(String breed, int age, int teeth, boolean hasClaws){
+    private String color;
+
+    Panda(String breed, int age, int teeth, boolean hasClaws, String color){
         super(breed, age, teeth, hasClaws);
+        this.color = color;
+    }
+
+    public String getColor(){
+        return color;
+
+    }
+
+    public void setColor(String color){
+        this.color = color;
     }
 
     public void makeSound(){

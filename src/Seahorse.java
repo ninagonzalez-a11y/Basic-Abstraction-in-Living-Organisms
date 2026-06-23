@@ -1,5 +1,6 @@
 public class Seahorse extends Percomorpha {
     Seahorse(String breed, int age, String size){
+
         super(breed, age, size);
     }
 
