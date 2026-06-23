@@ -1,4 +1,4 @@
-public class Giraffe extends Ruminantia{
+public class Giraffe extends Ruminantia implements IRuminantia{
 
     private int patchNumber;
     Giraffe(String breed, int age, String stomachSize, String headGear, int patchNumber){
@@ -33,4 +33,15 @@ public class Giraffe extends Ruminantia{
     public void chew(){
         System.out.println("Giraffe chews food with their long tongues and tough lips.");
     }
+
+    @Override
+    public void chewCud() {
+        System.out.print("Giraffe chew cud.");
+    }
+
+    @Override
+    public void regurgitate() {
+        System.out.print("Deer regurgitate.");
+    }
+
 }

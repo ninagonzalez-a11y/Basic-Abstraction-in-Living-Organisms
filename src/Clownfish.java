@@ -1,4 +1,4 @@
-public class Clownfish extends Percomorpha {
+public class Clownfish extends Percomorpha implements IPercomorpha{
 
     private String pattern;
 
@@ -26,7 +26,15 @@ public class Clownfish extends Percomorpha {
         System.out.println("Clownfish ate a larval shrimp.");
     }
 
-    public void swim(){
-        System.out.println("Clownfish swims as a lifestyle.");
+    @Override
+    public void swim() {
+        System.out.print("Clownfish swims.");
+
     }
+
+    @Override
+    public void dive() {
+        System.out.print("Clownfish dives");
+    }
+
 }

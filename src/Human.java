@@ -27,11 +27,16 @@ public class Human extends Primates{
         System.out.println("Human slept for 8 hours today.");
     }
 
-    public void thinks(){
-        System.out.println("Human had an existential crisis today.");
+    @Override
+    public void thinks() {
+        System.out.println("Monkey thinks.");
+        System.out.println("Human thinks.");
     }
 
-    public void socialize(){
+    @Override
+    public void socialize() {
+        System.out.println("Human socializes.");
         System.out.println("Human attended a church gathering today.");
     }
+
 }

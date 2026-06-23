@@ -1,4 +1,4 @@
-public class Deer extends Ruminantia {
+public class Deer extends Ruminantia implements IRuminantia{
     private String antlerShape;
 
     Deer(String breed, int age, String stomachSize, String headGear, String antlerShape)
@@ -35,4 +35,15 @@ public class Deer extends Ruminantia {
     public void chew(){
         System.out.println("Deer chews their cud.");
     }
+
+    @Override
+    public void chewCud() {
+        System.out.print("Deer chew cud.");
+    }
+
+    @Override
+    public void regurgitate() {
+        System.out.print("Deer regurgitate.");
+    }
+
 }

@@ -1,4 +1,4 @@
-public class Seahorse extends Percomorpha {
+public class Seahorse extends Percomorpha implements IPercomorpha{
     private int swimSpeed;
     Seahorse(String breed, int age, String size, int swimSpeed){
         super(breed, age, size);
@@ -24,7 +24,14 @@ public class Seahorse extends Percomorpha {
         System.out.println("Seahorse ate crustaceans today.");
     }
 
-    public void swim(){
-        System.out.println("Seahorse swims forever!");
+    @Override
+    public void swim() {
+        System.out.print("Seahorse swims.");
+
+    }
+
+    @Override
+    public void dive() {
+        System.out.print("Seahorse dives");
     }
 }

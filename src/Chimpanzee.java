@@ -38,4 +38,15 @@ public class Chimpanzee extends Primates{
 
         System.out.println("Monkey hugged his monkey friend.");
     }
+
+    @Override
+    public void thinks() {
+        System.out.println("Monkey thinks.");
+    }
+
+    @Override
+    public void socialize() {
+        System.out.println("Monkey socializes.");
+    }
+
 }
