@@ -1,4 +1,4 @@
-public class Giraffe extends Ruminantia implements IRuminantia{
+public class Giraffe extends Ruminantia implements RuminantiaInterface{
 
     private int patchNumber;
     Giraffe(String breed, int age, String stomachSize, String headGear, int patchNumber){

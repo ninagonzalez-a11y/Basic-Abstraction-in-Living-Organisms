@@ -1,4 +1,4 @@
-public class Rhino extends Perissodactyla{
+public class Rhino extends Perissodactyla implements PerissodactylaInterface{
     Rhino(String breed, int age, boolean hasOneHorn, String skinType){
         super(breed, age, hasOneHorn, skinType);
     }
@@ -24,4 +24,8 @@ public class Rhino extends Perissodactyla{
         System.out.println("Rhino used their lips and strong jaws to strip leaves.");
     }
 
+    @Override
+    public void gallop() {
+        System.out.print("Rhino gallops");
+    }
 }

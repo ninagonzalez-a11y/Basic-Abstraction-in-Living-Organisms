@@ -1,4 +1,4 @@
-public class Seahorse extends Percomorpha implements IPercomorpha{
+public class Seahorse extends Percomorpha implements PercomorphaInterface{
     private int swimSpeed;
     Seahorse(String breed, int age, String size, int swimSpeed){
         super(breed, age, size);

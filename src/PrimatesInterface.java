@@ -1,4 +1,4 @@
-public interface IPrimates {
+public interface PrimatesInterface {
     void thinks();
     void socialize();
 }

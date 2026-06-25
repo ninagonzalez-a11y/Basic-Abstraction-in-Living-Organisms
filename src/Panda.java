@@ -1,4 +1,4 @@
-public class Panda extends Caniformia {
+public class Panda extends Caniformia implements CaniformiaInterface {
 
     private String color;
 
@@ -35,7 +35,14 @@ public class Panda extends Caniformia {
         System.out.println("Panda sniffs his panda friend.");
     }
 
-    public void hunt(){
-        System.out.println("Panda hunts for small rodents.");
+    @Override
+    public void roar() {
+        System.out.println("Panda roars.");
     }
+
+    @Override
+    public void hunt() {
+        System.out.println("Panda hunts.");
+    }
+
 }

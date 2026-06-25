@@ -1,4 +1,4 @@
-public class Deer extends Ruminantia implements IRuminantia{
+public class Deer extends Ruminantia implements RuminantiaInterface{
     private String antlerShape;
 
     Deer(String breed, int age, String stomachSize, String headGear, String antlerShape)

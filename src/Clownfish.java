@@ -1,4 +1,4 @@
-public class Clownfish extends Percomorpha implements IPercomorpha{
+public class Clownfish extends Percomorpha implements PercomorphaInterface{
 
     private String pattern;
 

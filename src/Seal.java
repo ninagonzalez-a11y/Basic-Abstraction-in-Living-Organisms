@@ -1,4 +1,4 @@
-public class Seal extends Caniformia{
+public class Seal extends Caniformia implements CaniformiaInterface{
 
     private boolean hasEarFlaps;
 
@@ -33,10 +33,14 @@ public class Seal extends Caniformia{
         System.out.println("Seal sniffs her daughter seal.");
     }
 
-    public void hunt(){
-        System.out.println("Seal hunts for squid.");
+    @Override
+    public void roar() {
     }
 
+    @Override
+    public void hunt() {
+        System.out.println("Seal hunts for squid.");
+    }
 
 }
 

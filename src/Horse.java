@@ -1,4 +1,4 @@
-public class Horse extends Perissodactyla {
+public class Horse extends Perissodactyla implements PerissodactylaInterface{
     Horse(String breed, int age, boolean hasOneHorn, String skinType){
         super(breed, age, hasOneHorn, skinType);
     }
@@ -22,5 +22,10 @@ public class Horse extends Perissodactyla {
 
     public void browseOnTrees(){
         System.out.println("Horse ate leaves and chewed twigs.");
+    }
+
+    @Override
+    public void gallop() {
+        System.out.print("Horse gallops");
     }
 }

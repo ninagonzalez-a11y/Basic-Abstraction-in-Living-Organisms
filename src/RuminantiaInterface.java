@@ -1,4 +1,4 @@
-public interface IRuminantia {
+public interface RuminantiaInterface {
     void chewCud();
     void regurgitate();
 }

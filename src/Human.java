@@ -1,4 +1,4 @@
-public class Human extends Primates{
+public class Human extends Primates implements PrimatesInterface{
 
     private String eyeColor;
 
@@ -29,14 +29,12 @@ public class Human extends Primates{
 
     @Override
     public void thinks() {
-        System.out.println("Monkey thinks.");
         System.out.println("Human thinks.");
     }
 
     @Override
     public void socialize() {
         System.out.println("Human socializes.");
-        System.out.println("Human attended a church gathering today.");
     }
 
 }
